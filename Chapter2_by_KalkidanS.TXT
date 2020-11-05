@@ -1,1 +1,5 @@
 Greetings from KalkidanS
+
+This is CHEAT-SHEET for GIT CMD
+
+https://gist.github.com/cferdinandi/ef665330286fd5d7127d#file-terminal-cheat-sheet-txt
