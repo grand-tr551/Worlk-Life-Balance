@@ -1,0 +1,58 @@
+#%RAML 1.0
+title: employee-Alex
+description: employee onboarding api
+baseUri: http://localhost:8081/employee
+/add-employee:
+  post:
+    body:
+      application/json:
+        example:
+          {
+            "employeeId": 200,
+            "employeeName": "sisay",
+            "status": "A"
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "status": 200,
+                "message": "success"
+              }
+/fetch-employee:
+  get:
+    queryParameters:
+      employeeId:
+        displayName: employeeId
+        required: true
+        type: integer
+        example: 8788
+      status:
+        displayName: status
+        required: false
+        type: string
+        example: "A"
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+            
+              {
+                "employeeId": 100,
+                "employeeName": "sisay",
+                "status": "A"
+              }
+
+          
+          
+          
+            
+
+          
+
+
+          
+  
